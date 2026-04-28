@@ -44,6 +44,20 @@ public:
             }
             // Step 4: newNode.next = START
             newNode->next = START;
+
+            // Step 5: START.prev = newNode (if START exists)
+            if (START != NULL)
+                START=>prev = newNode;
+
+            // Step 6: newNode.prev = NULL
+            newNode->prev = NULL;
+
+            // Step 7: START = newNode
+            START = newNode;
+            return;
         }
+
+        // insert in between node
+        // Step 8: Locate position for insertion
     }
 }
