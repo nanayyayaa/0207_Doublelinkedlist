@@ -86,7 +86,7 @@ public:
     {
         if (START == NULL)
         {
-            cout << "n\list is empty" << endl;
+            cout << "n\List is empty" << endl;
             return;
         }
 
@@ -132,7 +132,7 @@ public:
     {
         if (START == NULL)
         {
-            cout << "n\list is empty" << endl;
+            cout << "n\List is empty" << endl;
             return;
         }
 
@@ -177,6 +177,22 @@ public:
             cout << i + 1 << ". " << currentNode->noMhs << " " << endl;
 
             // Step 3: Move to previos node
+            currentNode = currentNode->prev;
+            i--;
         }
+    }
+
+    void searchData()
+    {
+        if (START == NULL)
+        {
+            cout << "\nList is empty" << endl;
+            return;
+        }
+
+        int rollNo;
+        cout << "\nEnter the roll number to search: ";
+        cin >> rollNo;
+        
     }
 }
